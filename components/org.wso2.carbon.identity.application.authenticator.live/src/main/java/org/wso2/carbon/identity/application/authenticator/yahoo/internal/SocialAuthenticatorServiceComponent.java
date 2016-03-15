@@ -16,16 +16,16 @@
  * under the License.
  */
 
-package org.wso2.carbon.identity.application.authenticator.live.internal;
+package org.wso2.carbon.identity.application.authenticator.yahoo.internal;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.osgi.service.component.ComponentContext;
 import org.wso2.carbon.identity.application.authentication.framework.ApplicationAuthenticator;
-import org.wso2.carbon.identity.application.authenticator.live.WindowsLiveOAuth2Authenticator;
+import org.wso2.carbon.identity.application.authenticator.yahoo.WindowsLiveOAuth2Authenticator;
 
 /**
- * @scr.component name="identity.application.authenticator.live.component"
+ * @scr.component name="identity.application.authenticator.yahoo.component"
  * immediate="true"
  */
 public class SocialAuthenticatorServiceComponent {

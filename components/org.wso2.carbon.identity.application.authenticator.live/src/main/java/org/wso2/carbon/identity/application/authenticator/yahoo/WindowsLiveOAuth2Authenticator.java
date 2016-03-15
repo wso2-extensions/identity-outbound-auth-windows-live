@@ -15,7 +15,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.wso2.carbon.identity.application.authenticator.live;
+package org.wso2.carbon.identity.application.authenticator.yahoo;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.oltu.oauth2.client.response.OAuthClientResponse;
