@@ -194,8 +194,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Identity Outbound Auth Windows Live version -->
-        <identity.outbound.auth.windows.live.version>${project.version}</identity.outbound.auth.windows.live.version>
-        <identity.outbound.auth.windows.live.exp.version>${identity.outbound.auth.windows.live.version}</identity.outbound.auth.windows.live.exp.version>
+        <identity.outbound.auth.windows.live.exp.version>${project.version}</identity.outbound.auth.windows.live.exp.version>
         <identity.outbound.auth.windows.live.imp.pkg.version.range>[5.0.0,6.0.0)</identity.outbound.auth.windows.live.imp.pkg.version.range>
 
         <!-- Carbon kernel version -->
