@@ -136,19 +136,19 @@
             <dependency>
                 <groupId>org.wso2.carbon.identity</groupId>
                 <artifactId>org.wso2.carbon.identity.application.common</artifactId>
-                <version>${carbon.identity.framework.version}</version>
+                <version>${identity.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.carbon.identity</groupId>
                 <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
-                <version>${carbon.identity.framework.version}</version>
+                <version>${identity.framework.version}</version>
             </dependency>
 
             <!-- Carbon Identity Authenticator Openid dependencies -->
             <dependency>
                 <groupId>org.wso2.carbon.identity</groupId>
                 <artifactId>org.wso2.carbon.identity.application.authenticator.oidc</artifactId>
-                <version>${carbon.identity.authenticator.oidc.version}</version>
+                <version>${identity.outbound.auth.oidc.version}</version>
             </dependency>
 
             <!-- Orbit dependencies -->
@@ -272,12 +272,12 @@
         <carbon.kernel.imp.pkg.version.range>[4.4.0, 5.0.0)</carbon.kernel.imp.pkg.version.range>
 
         <!-- Carbon Identity Framework version -->
-        <carbon.identity.framework.version>5.2.0</carbon.identity.framework.version>
-        <carbon.identity.framework.imp.pkg.version.range>[5.0.0, 6.0.0)</carbon.identity.framework.imp.pkg.version.range>
+        <identity.framework.version>5.2.0</identity.framework.version>
+        <identity.framework.imp.pkg.version.range>[5.0.0, 6.0.0)</identity.framework.imp.pkg.version.range>
 
         <!-- Carbon Identity Authenticator Openid version -->
-        <carbon.identity.authenticator.oidc.version>5.1.1</carbon.identity.authenticator.oidc.version>
-        <carbon.identity.authenticator.oidc.imp.pkg.version.range>[5.0.0,6.0.0)</carbon.identity.authenticator.oidc.imp.pkg.version.range>
+        <identity.outbound.auth.oidc.version>5.1.1</identity.outbound.auth.oidc.version>
+        <identity.outbound.auth.oidc.imp.pkg.version.range>[5.0.0,6.0.0)</identity.outbound.auth.oidc.imp.pkg.version.range>
 
         <!-- Servlet API version -->
         <imp.pkg.version.javax.servlet>[2.6.0, 3.0.0)</imp.pkg.version.javax.servlet>
