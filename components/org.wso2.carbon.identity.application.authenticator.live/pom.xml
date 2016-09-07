@@ -82,11 +82,11 @@
                             org.osgi.framework; version="${osgi.framework.imp.pkg.version.range}",
                             org.osgi.service.component; version="${osgi.service.component.imp.pkg.version.range}",
 
-                            org.wso2.carbon.identity.application.authentication.framework.*;version="${carbon.identity.framework.imp.pkg.version.range}",
-                            org.wso2.carbon.identity.core.util;version="${carbon.identity.framework.imp.pkg.version.range}",
-                            org.wso2.carbon.identity.application.common.model;version="${carbon.identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authentication.framework.*;version="${identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.core.util;version="${identity.framework.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.common.model;version="${identity.framework.imp.pkg.version.range}",
 
-                            org.wso2.carbon.identity.application.authenticator.oidc;version="${carbon.identity.authenticator.oidc.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.application.authenticator.oidc;version="${identity.outbound.auth.oidc.imp.pkg.version.range}",
 
                             org.wso2.carbon.ui; version="${carbon.kernel.imp.pkg.version.range}"
                         </Import-Package>
