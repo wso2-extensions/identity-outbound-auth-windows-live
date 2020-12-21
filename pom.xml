@@ -27,7 +27,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.carbon.identity.outbound.auth.live</groupId>
     <artifactId>identity-outbound-auth-windows-live</artifactId>
-    <version>5.1.5-SNAPSHOT</version>
+    <version>5.1.5</version>
     <packaging>pom</packaging>
     <name>WSO2 Carbon - Windows live Authenticator Feature Aggregator Module</name>
     <url>http://wso2.org</url>
@@ -36,7 +36,7 @@
         <url>https://github.com/wso2-extensions/identity-outbound-auth-windows-live.git</url>
         <developerConnection>scm:git:https://github.com/wso2-extensions/identity-outbound-auth-windows-live.git</developerConnection>
         <connection>scm:git:https://github.com/wso2-extensions/identity-outbound-auth-windows-live.git</connection>
-        <tag>HEAD</tag>
+        <tag>v5.1.5</tag>
     </scm>
 
     <modules>
