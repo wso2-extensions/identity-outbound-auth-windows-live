@@ -35,19 +35,9 @@ public class WindowsLiveOAuth2AuthenticatorConstants {
     public static final String GIVEN_NAME_CLAIM_URI = "http://wso2.org/claims/givenname";
     public static final String LAST_NAME_CLAIM_URI = "http://wso2.org/claims/lastname";
     public static final String GENDER_CLAIM_URI = "http://wso2.org/claims/gender";
-    public static final String LOCALITY_CLAIM_URI = getClaimUriLocale();
+    public static final String LOCALITY_CLAIM_URI = IdentityUtil.getClaimUriLocale();
 
     private WindowsLiveOAuth2AuthenticatorConstants() {
     }
 
-    private static String getClaimUriLocale() {
-
-        if (Boolean.parseBoolean(IdentityUtil.getProperty("UseLegacyLocalizationClaim"))) {
-            return "http://wso2.org/claims/locality";
-        } else if (IdentityUtil.getProperty("UseLegacyLocalizationClaim") == null) {
-            return "http://wso2.org/claims/local";
-        } else {
-            return "http://wso2.org/claims/local";
-        }
-    }
 }
