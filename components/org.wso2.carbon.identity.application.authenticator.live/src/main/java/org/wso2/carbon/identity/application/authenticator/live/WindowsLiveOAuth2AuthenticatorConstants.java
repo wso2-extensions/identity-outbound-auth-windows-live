@@ -18,6 +18,8 @@
 
 package org.wso2.carbon.identity.application.authenticator.live;
 
+import org.wso2.carbon.identity.core.util.IdentityUtil;
+
 public class WindowsLiveOAuth2AuthenticatorConstants {
 
     public static final String AUTHENTICATOR_NAME = "MicrosoftWindowsLiveAuthenticator";
@@ -33,8 +35,19 @@ public class WindowsLiveOAuth2AuthenticatorConstants {
     public static final String GIVEN_NAME_CLAIM_URI = "http://wso2.org/claims/givenname";
     public static final String LAST_NAME_CLAIM_URI = "http://wso2.org/claims/lastname";
     public static final String GENDER_CLAIM_URI = "http://wso2.org/claims/gender";
-    public static final String LOCALITY_CLAIM_URI = "http://wso2.org/claims/locality";
+    public static final String LOCALITY_CLAIM_URI = getClaimUriLocale();
 
     private WindowsLiveOAuth2AuthenticatorConstants() {
+    }
+
+    private static String getClaimUriLocale() {
+
+        if (Boolean.parseBoolean(IdentityUtil.getProperty("UseLegacyLocalizationClaim"))) {
+            return "http://wso2.org/claims/locality";
+        } else if (IdentityUtil.getProperty("UseLegacyLocalizationClaim") == null) {
+            return "http://wso2.org/claims/local";
+        } else {
+            return "http://wso2.org/claims/local";
+        }
     }
 }
