@@ -37,10 +37,6 @@
             <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon</groupId>
-            <artifactId>org.wso2.carbon.ui</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.wso2.orbit.org.apache.oltu.oauth2</groupId>
             <artifactId>oltu</artifactId>
         </dependency>
@@ -87,8 +83,6 @@
                             org.wso2.carbon.identity.application.common.model;version="${identity.framework.imp.pkg.version.range}",
 
                             org.wso2.carbon.identity.application.authenticator.oidc;version="${identity.outbound.auth.oidc.imp.pkg.version.range}",
-
-                            org.wso2.carbon.ui; version="${carbon.kernel.imp.pkg.version.range}"
                         </Import-Package>
                         <Export-Package>
                             !org.wso2.carbon.identity.application.authenticator.live.internal,
